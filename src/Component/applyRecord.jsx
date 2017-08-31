@@ -161,6 +161,8 @@ class Main extends Component {
     }
     
     render() {
+		
+		//console.log(this.state.recordList);
         return (
             <div className='apply_container component_container'>
                 <Header goback title='提现记录'/>
@@ -184,5 +186,6 @@ export default template({
         return {
            year:2016
         }
-    }
+    },
+	method:'POST'
 });

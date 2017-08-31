@@ -22,6 +22,6 @@ var server = new WebpackDevServer(webpack(config), {
 server.app.get('*', function(req, res) {
 	res.sendFile(__dirname + '/index.html')
 });
-server.listen(8088, function() {
+server.listen(3232, function() {
 	console.log('正常打开8088端口')
 });

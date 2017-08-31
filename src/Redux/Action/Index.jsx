@@ -34,12 +34,14 @@ const receivePosts = (path, json) => {
 
 
 // 页面初次渲染时获取数据
-export const fetchPosts = (path, postData) => {
+export const fetchPosts = (path, postData,mtd) => {
     let url = target + path + Tool.paramType(postData);
+	!mtd?mtd='GET':'';
     return dispatch => {
         dispatch(requestPosts(postData));
         return fetch(url,{
             mode: 'cors',
+			method: mtd,  
             "Content-Type": "application/json",
         })
         .then(response => {

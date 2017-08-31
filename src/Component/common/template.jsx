@@ -11,6 +11,7 @@ const Main = mySeting => {
         url: '', //请求地址
         data: {}, //发送给服务器的数据
         component: <div></div>, //数据回调给的组件
+		method:'',
     };
 
     for (let key in mySeting) {
@@ -30,7 +31,7 @@ const Main = mySeting => {
 
         componentDidMount() {//获取数据
             if (this.props.seting.url) {
-                this.props.fetchPosts(this.props.seting.url,this.props.seting.data);
+                this.props.fetchPosts(this.props.seting.url,this.props.seting.data,this.props.seting.method);
             }
         }
 

@@ -10,6 +10,8 @@ body,div,span,header,footer,nav,section,aside,article,ul, li, a, p, h1, h2, h3, 
     border: none;
     font-family: 'Microsoft YaHei';
     -webkit-tap-highlight-color:transparent;
+	font:12px/1.5;
+	color:#666;
     &:focus {
         outline: none;
     }
@@ -37,7 +39,10 @@ body{
 .right{
     float: right;
 }
-
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
 .show{
     display: block;
 }

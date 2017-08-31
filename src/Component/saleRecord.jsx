@@ -120,13 +120,14 @@ class Main extends Component {
         this.state = {
             data:[],  //分销商列表数组
             oldName:'waited', //上次选中的类别，默认为waited
-            choosedClass:{waited:'team_choosed'}, //当前选中的类别，以此设置class名
+            choosedClass:{'waited':'team_choosed'}, //当前选中的类别，以此设置class名
             currentPage:1, //当前所在页数
             totalPage:1  ,//总共的页数
             limit:20 ,  //每页加载的数量
             shouldUpdata:true,  //当获取数据后才能进行加载
         }
         this.chooseStatus = (event) => { //筛选类型
+
             let name = null;
             if (event.target.children[0]) {
                 name = event.target.children[0].getAttribute('name')
@@ -213,6 +214,7 @@ class Main extends Component {
     }
 
     render() {
+		console.log(this.state.data);
         if (this.state.currentPage < this.state.totalPage) {
             Tool.nextPage(this.refs.Container,this.state.currentPage,this.state.totalPage,this.getNextPage,this.state.shouldUpdata)
         }

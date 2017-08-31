@@ -26,12 +26,15 @@
     "pure-render-decorator": "^1.2.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-native-swiper": "^1.5.10",
     "react-redux": "^4.4.5",
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
     "redux-immutablejs": "^0.0.8",
     "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
+    "redux-thunk": "^2.1.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.72.0"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",

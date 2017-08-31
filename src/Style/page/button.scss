@@ -1,0 +1,30 @@
+a.theme-btn-pp {
+	color: #fff;
+	background: #DD3355;
+	width: 68px;
+	font-size: 12px;
+	padding: 0px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 4px;
+	float: right;
+	border-radius: 5px;
+	text-align: center;
+	margin-right: 3px;
+}
+.ico-back,.ico-prev,.ico-next,.ico-fold,.ico-unfold {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    background: none;
+}
+
+.ico-back {
+    width: 11px;
+    height: 11px;
+    border-width: 2px 0 0 2px;
+    color: #8a8a8a;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
